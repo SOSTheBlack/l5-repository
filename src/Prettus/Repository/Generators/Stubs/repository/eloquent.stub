@@ -16,7 +16,7 @@ $USE_VALIDATOR$
 class $CLASS$RepositoryEloquent extends BaseRepository implements $CLASS$Repository
 {
     /**
-     * Specify Model class name
+     * Specify Model class name.
      *
      * @return string
      */
@@ -28,7 +28,9 @@ class $CLASS$RepositoryEloquent extends BaseRepository implements $CLASS$Reposit
     $VALIDATOR$
 
     /**
-     * Boot up the repository, pushing criteria
+     * Boot up the repository, pushing criteria.
+     *
+     * @throws \Prettus\Repository\Exceptions\RepositoryException
      */
     public function boot()
     {
